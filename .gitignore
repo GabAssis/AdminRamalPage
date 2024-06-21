@@ -13,6 +13,8 @@ frontendtwo/node_modules
 /build
 
 # misc
+api/.env
+frontendtwo/.env
 .DS_Store
 .env.local
 .env.development.local
