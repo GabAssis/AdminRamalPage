@@ -1,9 +1,12 @@
+import dotenv from "dotenv";
 import mysql from "mysql";
 import { CgNametag } from "react-icons/cg";
 
-const baseHost=process.env.API_DB_IP
-const baseUser=process.env.API_DB_USER
-const basePass=process.env.API_DB_PASS
+dotenv.config();
+
+const baseHost = process.env.API_DB_IP
+const baseUser = process.env.API_DB_USER
+const basePass = process.env.API_DB_PASS
 
 export const db = mysql.createPool({
     host: baseHost,
